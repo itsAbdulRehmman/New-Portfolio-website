@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AR's Portfolio</title>
+    <!-- importing Font family from google  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Teko:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Lobster&family=Teko:wght@600&display=swap" rel="stylesheet">
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: rgb(18, 18, 66);
+        color: whitesmoke;
+        font-family: "Lobster", cursive;
+      }
+nav{
+    
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    height: 50px;
+    background-color: rgba(76, 21, 131, 0.911);
+}
+
+.left{
+    font-size: x-large;
+    margin: 0.5rem;
+    
+}
+.right{
+    margin: 01rem;
+
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    display: flex;
+    list-style: none;
+    margin:0px 23px;
+}
+a{
+    
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+}
+ li a:hover{
+    color: #89dfdf;
+    font-weight:bolder;
+    font-style: italic;
+    font-size: 200%;
+    transition: .4s;
+}
+.left a:hover{
+  color: #89dfdf;
+    font-weight:bolder;
+    font-style: italic;
+    font-size: 200%;
+    transition: .4s;
+}
+li a::after{
+  color: coral;
+}
+main{
+    font-family:'Teko', sans-serif;
+}
+.first{
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 40px;
+
+}
+.leftSection{
+    margin: 10% 0;
+    width: 35%;
+    font-size: xx-large;
+}
+.btn{
+    margin: 25px 0;
+    padding: 4px 4px;
+    /* display: flex; */
+    background: #2020d8fd;
+    border: 3px solid white;
+    border-radius: 6px;
+    font-size: 1.8rem;
+    transform: skewX(145deg)
+}
+.btn a:hover{
+  text-decoration: none;
+  font-weight: 1rem;
+  color: rgb(154, 185, 185);
+
+}
+span{
+    color: blue;
+    font-style: bolder;
+    font-family: 'Bungee Spice', cursive;
+}
+span1{
+    color: blueviolet;
+    font-style:bolder ;
+}
+script{
+    color: rgb(207, 89, 89);
+}
+.rightSection{
+    width: 30%;
+
+}
+img{
+    width: 90%;
+    margin: 0px 0;
+
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left"><a href="">AR's Portfolio</a></div>
+        <div class="right">
+          <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Courses</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Contact Me</a></li>
+        
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <section class="first">
+            <div class="leftSection">
+                Hi, n Welcome into the webstream of <span>Mr.Abdul Rehman...</span>
+                <br>
+               A passionate <span1>"Fullstack Developer".</span1><br> 
+               <span id="element"></span> 
+               <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+               <div class="button">
+                <button class="btn"><a href="http://www.github.com/itsAbdulRehmman" target="_blank" rel="noopener noreferrer"> Visit Github</a></button>
+                <button class="btn"><a href="https://www.linkedin.com/in/itsabdulrehman-72535a27b" target="_blank" rel="noopener noreferrer">Visit Linkedin</a></button>
+               </div>
+            </div>
+            <div class="rightSection">
+                <img src="./imgz/croped.jpg.png" alt="">
+            </div>
+    </main>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['web developer...', ' front-end developer..','back-end developer...', 'web designer...' ],
+
+          typeSpeed: 80,
+        
+        });
+      </script>
+  </body>
+</html>

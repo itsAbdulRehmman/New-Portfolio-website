@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="JavaScript" href="script.js" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <section class="hero">
+      <div class="main-width">
+        <header>
+          <div class="logo">
+            <i class="fa-brands fa-atlassian fa-beat-fade"></i>
+          </div>
+
+          <nav>
+            <div class="hamb">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <ul class="nav-list">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Courses</a></li>
+              <li class="btn"><a href="#">Contact Me</a></li>
+            </ul>
+          </nav>
+        </header>
+        <div class="container">
+          <div class="hero-txt">
+            <h3>Hi, There!</h3>
+            <h1>I am <span1> Abdul Rehman.</span1></h1>
+            <h3>I am a compassionate <span>"Fullstack Developer."</span></h3>
+            <h3>
+              Moreover,i have a strong command in
+              <span id="element"></span>
+              <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+            </h3>
+            <div class="social">
+              <a href="https://www.instagram.com/manijutt33" target="_blank"
+                ><i
+                  class="fa-brands fa-instagram fa-fade"
+                  style="color: #f26970"
+                ></i
+              ></a>
+              <a href="https://www.facebook.com/manijutt" target="_blank"
+                ><i
+                  class="fa-brands fa-facebook fa-flip"
+                  style="color: #5a8ce2"
+                ></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/itsabdulrehman-72535a27b"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin" style="color: #5dd2da"></i
+              ></a>
+              <a href="https://www.github.com/itsAbdulRehmman" target="_blank"
+                ><i
+                  class="fa-brands fa-github fa-beat"
+                  style="color: #01060e"
+                ></i
+              ></a>
+              <button type="button">More About ME.</button>
+            </div>
+          </div>
+
+          <div class="bottom">
+            <h6>&COPY; AR - All rights reserved.</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "HTML...",
+          "CSS...",
+          "JavaScript...",
+          "C-programming...",
+          "Python Programming...",
+          "Web Development...",
+          " Front-end development...",
+          "Back-end development...",
+          "Web Designing...",
+        ],
+
+        typeSpeed: 90,
+        backSpeed: 50,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>

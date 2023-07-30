@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: bottom 20px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  overflow-x: hidden;
+  background: linear-gradient(black, transparent);
+}
+.main-width {
+  width: 1280px;
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+.hero {
+  width: 100%;
+  height: 70%;
+  min-height: 228vh;
+  background-image: url(./imgz/20171229_164618-removebg.png);
+  background-size: cover;
+  background-position-y: center;
+  position: relative;
+}
+header {
+  padding: 40px 0 30px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  height: 55px;
+  width: 55px;
+  background: transparent;
+  border: 2px solid rgb(82, 82, 228);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: #db7929;
+  transition-property: var(#89dfdf);
+  transition: 0.5s;
+}
+.logo:hover {
+  background: #df1818;
+  color: #eee;
+  transition: 0.4s;
+}
+li a {
+  color: ghostwhite;
+}
+nav .hamb {
+  width: 35%;
+  height: 24%;
+  right: 3%;
+  top: 60px;
+  z-index: 5;
+  background: transparent;
+  position: absolute;
+  cursor: pointer;
+  display: none;
+}
+nav .hamb span {
+  display: block;
+  background: #2ecc71;
+  width: 100%;
+  height: 3px;
+  transition: 0.3s;
+  transition-property: transform, opacity;
+}
+nav .hamb span:nth-child(2) {
+  margin: 7px 0px;
+}
+nav .nav-list li {
+  display: inline-block;
+}
+nav .nav-list li a {
+  display: inline-block;
+  color: #eee;
+  margin-left: 55px;
+  font-size: 15px;
+  font-weight: 600;
+}
+nav .nav-list li:not(:last-child) a:hover {
+  color: #2ecc71;
+  transition: 0.4s;
+}
+nav .nav-list li.btn a {
+  display: inline-block;
+  background: transparent;
+  border: 2px solid #2ecc71;
+  padding: 9px 28px;
+  border-radius: 30px;
+  line-height: 1.3;
+  color: #2ecc71;
+  font-weight: 500;
+}
+nav .nav-list li.btn:hover a {
+  background: #2ecc71;
+  color: #eee;
+  transition: 0.4s;
+}
+.container .hero-txt h1 {
+  transition: 1.4s;
+  /* color: #db7929; */
+  font-weight: bolder;
+  font-size: 47px;
+  line-height: 1.2;
+  margin: 20px 0px 20px;
+}
+.container .hero-txt span1 {
+  color: #db7929;
+  font-size: 47px;
+}
+span {
+  color: #db7929;
+  font-size: 35px;
+}
+.container {
+  color: #eee;
+  padding-top: 190px;
+}
+.container .hero-txt {
+  margin-bottom: 40px;
+}
+.social a {
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-content: center;
+  justify-content: center;
+  color: #eee;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.social a i {
+  font-size: 40px;
+  inline-size: 20px;
+  margin-top: 1pc;
+}
+.social a i:hover {
+  font-size: 2pc;
+  transition: 0.4s;
+  font-style: oblique;
+}
+
+.container #element {
+  color: #db7929;
+  font-size: x-large;
+  font-style: italic;
+  font-weight: bolder;
+}
+button {
+  display: flex;
+  border-radius: 46%;
+  border: #3f4a86;
+  inline-size: 10pc;
+  color: brown;
+  background: #01060e;
+  cursor: pointer;
+  margin-right: 2pc;
+  font-size: 18px;
+  margin-top: 0.6%;
+  font-stretch: 2pc;
+}
+button:hover {
+  background: black;
+  color: #eee;
+  font-size: large;
+  transition: 0.7s;
+}
+.bottom {
+  margin-top: 250px;
+  padding-bottom: 40px;
+}
+.bottom p {
+  color: #eee;
+  letter-spacing: 2px;
+  font-size: 15px;
+}
+@media screen and (max-width: 930px) {
+  nav .hamb {
+    display: initial;
+  }
+  .click {
+    top: 46px;
+  }
+  .click span {
+    position: absolute;
+    margin-top: 12px;
+  }
+  .click span:first-child {
+    transform: rotate(-40deg);
+  }
+  .click span:nth-child(2) {
+    opacity: 0;
+    margin: 0;
+  }
+  .click span:last-child {
+    transform: rotate(40deg);
+    top: 0;
+  }
+  nav .nav-list {
+    position: absolute;
+    top: 90px;
+    right: -6%;
+    bottom: 0;
+    width: 40%;
+    height: 30%;
+    background: black;
+    z-index: 2;
+    padding: 6% 9%;
+    transition: 0.3s right;
+    border-radius: 10px;
+  }
+  nav .nav-list li {
+    display: block;
+  }
+  nav .nav-list li a {
+    display: flexbox;
+    text-align: center;
+    justify-content: space-around;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+   nav .nav-list li.btn a { 
+    position: absolute;
+    bottom: 0%;
+    right: 20%;
+    left: 20%;
+    padding: 7px 15px;
+    font-size: 14px;
+  }
+   nav .nav-list .open { 
+    right: 0;
+  }
+}
